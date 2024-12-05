@@ -1,0 +1,11 @@
+name:
+hosts: all // this means give access to all servers in hosts file
+remote_user:
+role: 
+
+//handlers
+- name: updated.html copy
+  template: 
+  notify:
+    - Restart Nginx
+    //update nginx when html got updated
