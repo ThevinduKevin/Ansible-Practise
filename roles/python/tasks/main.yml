@@ -9,3 +9,18 @@ role:
   notify:
     - Restart Nginx
     //update nginx when html got updated
+
+//variables in ansible
+vars:
+  //string
+  main_var: "foo"
+  //boolean
+  is_enebled: false
+  //list
+  fruits:
+    - mango
+    - apple
+  //dictionary variables
+  price_fruits:
+    - mango: 2.50
+    - apple: 3.11
